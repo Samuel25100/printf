@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stddef.h>
+
 /**
  * print_s - print a string.
  * @val: argumen t.

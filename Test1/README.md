@@ -15,3 +15,5 @@ main.h - have all library _printf need and prototype of all function
 main.c - is the file to check wether the project(_printf) is working correctly 
 
 ##How to run: compile the _printf and main.c -> run out ./a.out
+ToT progress:- covered: string,%d,%i,%c,%s,%%
+	      missing: %u,%o,%x,%X,%p,%r

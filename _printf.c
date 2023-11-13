@@ -32,5 +32,6 @@ int _printf(const char *format, ...)
 	count = count + _putchar(format[x]);
 	x++;
 	}
+	va_end(list);
 	return (count);
 }

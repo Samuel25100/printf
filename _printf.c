@@ -27,6 +27,7 @@ int _printf(const char *format, ...)
 	{
 	count = count + func[y].func(list);
 	x = x + 2;
+	break;
 	}
 	}
 	}

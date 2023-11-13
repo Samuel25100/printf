@@ -17,4 +17,5 @@ int _print_d(va_list list);
 int _print_i(va_list list);
 int _print_c(va_list list);
 int _print_per(void);
+int _print_bi(va_list list);
 #endif

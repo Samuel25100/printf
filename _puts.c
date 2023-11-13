@@ -22,9 +22,13 @@ int _puts_s(va_list list)
  */
 int _puts(char *s)
 {
-	int len = _strlen(s);
-
-	return (write(1, s, len));
+	int len = _strlen(s), x;
+	
+	for (x = 0; x <= len; x++)
+	{
+	_putchar(*(s + x));
+	}
+	return (len);
 }
 /**
  * _strlenc - finds length of a string but for constant characters

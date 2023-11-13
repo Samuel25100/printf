@@ -12,6 +12,10 @@ int _print_c(va_list list)
 	_putchar(c);
 	return (1);
 }
+/**
+ * _print_per - print '%'
+ * Return: 1 success
+ */
 int _print_per(void)
 {
 	_putchar(37);

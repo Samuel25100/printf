@@ -7,9 +7,13 @@
 int _puts_s(va_list list)
 {
 	char *s = va_arg(list, char *);
-	int len = strlen(s);
+	int len = _strlen(s), x;
 
-	return (write(1, s, len));
+	for (x = 0; x <= len; x++)
+	{
+	_putchar(*(s + x));
+	}
+	return (len);
 }
 /**
  * _puts - print string
@@ -18,7 +22,22 @@ int _puts_s(va_list list)
  */
 int _puts(char *s)
 {
-	int len = strlen(s);
+	int len = _strlen(s);
 
 	return (write(1, s, len));
+}
+/**
+ * _strlenc - finds length of a string but for constant characters
+ * @s: string
+ * Return: integer
+ */
+int _strlen(char *s)
+{
+	int len = 0;
+
+	while (*(s + len))
+	{
+	len++;
+	}
+	return (len);
 }

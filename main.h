@@ -7,8 +7,8 @@ int (*func)();
 } list_fun;
 #include <unistd.h>
 #include <stdarg.h>
-#include <string.h>
 #include <stdio.h>
+int _strlen(char *s);
 int _printf(const char *format, ...);
 int _putchar(char c);
 int _puts_s(va_list list);

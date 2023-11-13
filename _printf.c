@@ -34,9 +34,6 @@ int _printf(const char *format, ...)
 		case 'i':
 			count = count + _print_int(va_arg(list, int));
 			break;
-		case '%':
-			count = count + _putchar('%');
-			break;
 		default:
 			count = count + _putchar(format[x]);
 		}

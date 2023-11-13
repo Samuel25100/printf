@@ -27,24 +27,20 @@ int _printf(const char *format, ...)
 			}
 			break;
 		case 'd':
-			{
 			count = count + _print_int(va_arg(list, int));
-			}
 			break;
 		case 'i':
-			{
 			count = count + _print_int(va_arg(list, int));
-			}
 			break;
 		case '%':
 			count = count + _putchar('%');
 			break;
 		default:
-			count = count + _putchar(format[x]); 
+			count = count + _putchar(format[x]);
 		}
 		x = x + 1;
 	}
-	else 
+	else
 	count = count + _putchar(format[x]);
 	x++;
 	}

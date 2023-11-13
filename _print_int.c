@@ -7,7 +7,7 @@
 int _print_i(va_list list)
 {
 	int num = va_arg(list, int);
-	char array[15] = {0};
+	char array[20] = {0};
 	int count = 0, x, z = 12;
 
 	if (num == 0)
@@ -35,7 +35,7 @@ int _print_i(va_list list)
 int _print_d(va_list list)
 {
 	int num = va_arg(list, int);
-	char array[15] = {0};
+	char array[20] = {0};
 	int count = 0, x, z = 12;
 
 	if (num == 0)

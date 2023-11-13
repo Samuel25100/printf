@@ -10,7 +10,7 @@ int _printf(const char *format, ...)
 	va_list list;
 
 	list_fun func[] = {
-	{"%s", _puts_s}, {"%c", _print_c},{"%%", _print_per},
+	{"%s", _puts_s}, {"%c", _print_c}, {"%%", _print_per},
 	{"%i", _print_i}, {"%d", _print_d}};
 	va_start(list, format);
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))

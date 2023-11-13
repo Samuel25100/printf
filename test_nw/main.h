@@ -4,7 +4,7 @@ typedef struct fun_struc
 {
 char *chx;
 int (*func)();
-}list_fun;
+} list_fun;
 #include <unistd.h>
 #include <stdarg.h>
 #include <string.h>

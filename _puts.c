@@ -23,7 +23,7 @@ int _puts_s(va_list list)
 int _puts(char *s)
 {
 	int len = _strlen(s), x;
-	
+
 	for (x = 0; x <= len; x++)
 	{
 	_putchar(*(s + x));
@@ -31,7 +31,7 @@ int _puts(char *s)
 	return (len);
 }
 /**
- * _strlenc - finds length of a string but for constant characters
+ * _strlen - finds length of a string but for constant characters
  * @s: string
  * Return: integer
  */

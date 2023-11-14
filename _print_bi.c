@@ -18,7 +18,7 @@ int _print_bi(va_list list)
  * @x: the num
  * Return: number of byte it print
  */
-int change_to_bi(unsigned int n)
+int change_to_bi(unsigned int x)
 {
 	int count = 0;
 

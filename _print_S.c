@@ -1,5 +1,4 @@
 #include "main.h"
-int _print_SHEX(long int c);
 /**
  * _print_S - print string and print non-printable chx '\x' followed
  * by ASCII value hex in upper case 

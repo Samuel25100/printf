@@ -1,12 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
 #define BUFF_SIZE 1024
-/**
- * struct fun_struc - match the conversion specifiers for printf
- * @chx: type char pointer of the specifier
- * @func: type pointer to function for the conversion specifier
- *
- */
 typedef struct fun_struc
 {
 char *chx;
@@ -29,7 +23,9 @@ int _print_bi(va_list list);
 int _print_u(va_list list);
 int _print_o(va_list list);
 int _print_x(va_list list);
+int _print_hexi(long int num, int count);
 int _print_X(va_list list);
 int _print_HEXI(long int num, int count);
 int _print_S(va_list list);
+int _print_p(va_list list);
 #endif

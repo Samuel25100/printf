@@ -1,12 +1,12 @@
 #include "main.h"
 /**
  * _print_p - print address
- * @list: all arguments 
+ * @list: all arguments
  * Return: number of bytes printed
  */
 int _print_p(va_list list)
 {
-	int count = 0, x; 
+	int count = 0, x;
 	char *s = "(nil)";
 	void *p = va_arg(list, void *);
 	long int num;

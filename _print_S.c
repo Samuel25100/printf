@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _print_S - print string and print non-printable chx '\x' followed
- * by ASCII value hex in upper case 
+ * by ASCII value hex in upper case
  * @list: list of all argument
  * Return: num of byte printed
  */

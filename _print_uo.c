@@ -1,6 +1,6 @@
 #include "main.h"
 
-int print_unsigned(unsigned long int num, int count);
+int print_unsig(unsigned int num, int count);
 int _print_octal(unsigned long int num, int count);
 
 /**
@@ -13,7 +13,7 @@ int _print_u(va_list list)
 	unsigned long int num = va_arg(list, unsigned long int);
 	int count = 0;
 
-	count = print_unsigned(num, count);
+	count = print_unsig(num, count);
 	return (count);
 }
 
@@ -23,10 +23,10 @@ int _print_u(va_list list)
  * @count: current count of characters printed
  * Return: updated count of characters printed
  */
-int print_unsigned(unsigned long int num, int count)
+int print_unsig(unsigned int num, int count)
 {
 	if (num / 10)
-	count = print_unsigned(num / 10, count);
+	count = print_unsig(num / 10, count);
 
 	_putchar((num % 10) + '0');
 	count++;

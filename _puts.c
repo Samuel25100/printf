@@ -7,8 +7,11 @@
 int _puts_s(va_list list)
 {
 	char *s = va_arg(list, char *);
-	int len = _strlen(s), x;
+	int len, x;
 
+	if (s == NULL)
+		s = "(nil)";
+	len = _strlen(s);
 	for (x = 0; x <= len; x++)
 	{
 	_putchar(*(s + x));
@@ -23,7 +26,7 @@ int _puts_s(va_list list)
 int _puts(char *s)
 {
 	int len = _strlen(s), x;
-	
+
 	for (x = 0; x <= len; x++)
 	{
 	_putchar(*(s + x));

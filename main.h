@@ -9,6 +9,7 @@ int (*func)();
 #include <unistd.h>
 #include <stdarg.h>
 #include <stdio.h>
+#include <stdlib.h>
 int _strlen(char *s);
 int _printf(const char *format, ...);
 int _putchar(char c);
@@ -23,4 +24,6 @@ int _print_u(va_list list);
 int _print_o(va_list list);
 int _print_x(va_list list);
 int _print_X(va_list list);
+int _print_HEXI(long int num, int count);
+int _print_S(va_list list);
 #endif

@@ -11,9 +11,9 @@ int _printf(const char *format, ...)
 
 	list_fun func[] = {
 	{"%s", _puts_s}, {"%c", _print_c}, {"%%", _print_per},
-	{"%i", _print_i}, {"%d", _print_d}, {"%b", _print_bi},
-	{"%u", _print_u}, {"%o", _print_o}, {"%x", _print_x},
-	{"%X", _print_X}};
+	{"%i", _print_i}, {"%d", _print_d}, {"%b",_print_bi},
+	{"%u", _print_u}, {"%o", _print_o}, {"%x", _print_x}, 
+	{"%X", _print_X}, {"%S", _print_S}};
 	va_start(list, format);
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
@@ -22,7 +22,7 @@ int _printf(const char *format, ...)
 	{
 	if (format[x] == '%')
 	{
-	for (y = 0; y <= 9; y++)
+	for (y = 0; y <= 10; y++)
 	{
 	if (format[x + 1] == func[y].chx[1])
 	{

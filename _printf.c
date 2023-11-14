@@ -5,7 +5,7 @@
  * Return: the number of characters printed (excluding the null byte)
  */
 int _printf(const char *format, ...)
-{
+{	
 	int count = 0, x = 0, y;
 	va_list list;
 
@@ -13,7 +13,7 @@ int _printf(const char *format, ...)
 	{"%s", _puts_s}, {"%c", _print_c}, {"%%", _print_per},
 	{"%i", _print_i}, {"%d", _print_d}, {"%b",_print_bi},
 	{"%u", _print_u}, {"%o", _print_o}, {"%x", _print_x}, 
-	{"%X", _print_X}, {"%S", _print_S}};
+	{"%X", _print_X},{"%S", _print_S}};
 	va_start(list, format);
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);

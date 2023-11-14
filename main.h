@@ -1,6 +1,12 @@
 #ifndef MAIN_H
 #define MAIN_H
 #define BUFF_SIZE 1024
+/**
+ * struct fun_struc - match the conversion specifiers for printf
+ * @chx: type char pointer of the specifier
+ * @func: type pointer to function for the conversion specifier
+ *
+ */
 typedef struct fun_struc
 {
 char *chx;

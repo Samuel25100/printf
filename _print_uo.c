@@ -18,7 +18,7 @@ int _print_u(va_list list)
 }
 
 /**
- * print_unsigned - prints an unsigned integer
+ * print_unsig - prints an unsigned integer
  * @num: the unsigned integer to be printed
  * @count: current count of characters printed
  * Return: updated count of characters printed

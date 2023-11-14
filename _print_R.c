@@ -10,12 +10,12 @@ int _print_R(va_list list)
 	char *s = va_arg(list, char *);
 char arr1[] = {"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"};
 char arr2[] = {"nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"};
-	
+
 	if (s == NULL)
 		s = "(ahyy)";
 	for (x = 0; s[x]; x++)
 	{
-	if ((s[x] <= 122 && s[x] >= 97)||(s[x] <= 90 && s[x] >= 65))
+	if ((s[x] <= 122 && s[x] >= 97) || (s[x] <= 90 && s[x] >= 65))
 	{
 		for (y = 0; y < 52; y++)
 		{

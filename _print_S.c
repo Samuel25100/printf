@@ -19,14 +19,11 @@ int _print_S(va_list list)
 	count = count + _putchar('\\');
 	count = count + _putchar('x');
 	ch = s[x];
-	x = x + 2;
 	if (ch < 16)
 	{
 	count = count + _putchar('0');
-	x = x + 1;
 	}
 	count = count + _print_HEXI(ch, 0);
-	x = x + 1;
 	}
 	else
 	{
@@ -36,26 +33,3 @@ int _print_S(va_list list)
 	}
 	return (count);
 }
-/*int _print_SHEX(long int c)
-{
-	char arr[] = {'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
-	char *a;
-	int x = 0, count = 0;
-	
-	while (c / 16)
-		count++;
-	a = malloc(sizeof(char) * count);
-	count = 0;
-	while (c / 16 != 0)
-	{
-	a[x] = arr[c % 16];
-	c = c / 16;
-	x++;
-	}
-	while (x >= 0)
-	{
-	count = count + _putchar(a[x]);
-	x--;
-	}
-	return (count);
-}*/

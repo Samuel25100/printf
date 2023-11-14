@@ -21,7 +21,7 @@ int _printf(const char *format, ...)
 	{
 	if (format[x] == '%')
 	{
-	for (y = 0; y < 6; y++)
+	for (y = 0; y <= 6; y++)
 	{
 	if (format[x + 1] == func[y].chx[1])
 	{

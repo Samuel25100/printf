@@ -1,4 +1,5 @@
 #include "main.h"
+int print_unsigned(long int num, int count);
 /**
  * _print_u - print unsigned int
  * @list: all arguments
@@ -6,20 +7,24 @@
  */
 int _print_u(va_list list)
 {
-	unsigned int num = va_arg(list, unsigned int);
-	char array[200] = {0};
-	int count = 0, x, z = 12;
-
-	if (num == 0)
+	long int num = va_arg(list, unsigned int);
+	int count = 0;
+	count = print_unsigned(num , count);
+	return (count);
+}
+int print_unsigned(long int num, int count)
+{
+	if (num < 0)
 	{
-	count += _putchar('0');
+	num = num * -1;
+	count++;
 	}
-	for (x = 0; num != 0; x++)
+	if (num / 10)
 	{
-	array[z--] = (num % 10) + '0';
-	num = num / 10;
+	count = print_unsigned(num / 10, count++);
 	}
-	count = count + _puts(&array[z + 1]);
+	_putchar((num % 10) + '0');
+	count++;
 	return (count);
 }
 /**

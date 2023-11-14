@@ -29,5 +29,5 @@ char arr2[] = {"nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"};
 	else
 		count = count + _putchar(s[x]);
 	}
-	return (count)
+	return (count);
 }

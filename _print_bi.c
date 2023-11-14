@@ -18,14 +18,14 @@ int _print_bi(va_list list)
  * @x: the num
  * Return: number of byte it print
  */
-int change_to_bi(unsigned int n)
+int change_to_bi(unsigned int x)
 {
 	int count = 0;
 
-	if (n > 0)
+	if (x > 0)
 	{
-	change_to_bi(n / 2);
-	count = count + _putchar((n % 2) + '0');
+	change_to_bi(x / 2);
+	count = count + _putchar((x % 2) + '0');
 	}
 	return (count);
 }

@@ -34,7 +34,7 @@ int _puts(char *s)
 	return (len);
 }
 /**
- * _strlenc - finds length of a string but for constant characters
+ * _strlen - finds length of a string but for constant characters
  * @s: string
  * Return: integer
  */

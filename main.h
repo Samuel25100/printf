@@ -1,6 +1,11 @@
 #ifndef MAIN_H
 #define MAIN_H
 #define BUFF_SIZE 1024
+/**
+ * struct fun_struc - struct of function
+ * @chx: the chars
+ * @func: the functions
+ */
 typedef struct fun_struc
 {
 char *chx;

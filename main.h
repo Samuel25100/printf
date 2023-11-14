@@ -28,4 +28,6 @@ int _print_X(va_list list);
 int _print_HEXI(long int num, int count);
 int _print_S(va_list list);
 int _print_p(va_list list);
+int _print_r(va_list list);
+/*int _flag+chx(cost char *format, char c, va_list list);*/
 #endif

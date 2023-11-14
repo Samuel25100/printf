@@ -44,6 +44,12 @@ int _print_X(va_list list)
 	count = _print_HEXI(num, count);
 	return (count);
 }
+/**
+ * _print_HEXI - reciev parameter and print hex
+ * @num - the number 
+ * @count is the byte it printed
+ * Return: count
+ */
 int _print_HEXI(long int num, int count)
 {
 	char arr[] = {'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};

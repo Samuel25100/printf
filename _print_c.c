@@ -11,7 +11,6 @@ int _print_c(va_list list)
 	c = va_arg(list, int);
 	_putchar(c);
 	return (1);
-	va_end(list);
 }
 /**
  * _print_per - print '%'

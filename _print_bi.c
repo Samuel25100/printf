@@ -8,9 +8,9 @@ int change_to_bi(unsigned int x);
 int _print_bi(va_list list)
 {
 	unsigned int num = va_arg(list, unsigned int);
-	int x;
+	int x = 0;
 
-	x = change_to_bi(num);
+	x = x + change_to_bi(num);
 	return (x);
 }
 /**
@@ -20,12 +20,18 @@ int _print_bi(va_list list)
  */
 int change_to_bi(unsigned int x)
 {
+	unsigned int z = x;
 	int count = 0;
 
+	while (z > 0)
+	{
+	z = z / 2;
+	count++;
+	}
 	if (x > 0)
 	{
 	change_to_bi(x / 2);
-	count = count + _putchar((x % 2) + '0');
+	_putchar((x % 2) + '0');
 	}
 	return (count);
 }

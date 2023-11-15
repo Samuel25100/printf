@@ -12,7 +12,7 @@ int _puts_s(va_list list)
 	if (s == NULL)
 		s = "(null)";
 	len = _strlen(s);
-	for (x = 0; x <= len; x++)
+	for (x = 0; s[x] != '\0'; x++)
 	{
 	_putchar(*(s + x));
 	}
@@ -27,7 +27,7 @@ int _puts(char *s)
 {
 	int len = _strlen(s), x;
 
-	for (x = 0; x <= len; x++)
+	for (x = 0; s[x] != '\0'; x++)
 	{
 	_putchar(*(s + x));
 	}

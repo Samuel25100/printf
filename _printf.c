@@ -21,7 +21,7 @@ int _printf(const char *format, ...)
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 
-	while (format[x])
+	while (format[x] != '\0')
 	{
 	if (format[x] == '%')
 	{
@@ -33,6 +33,7 @@ int _printf(const char *format, ...)
 	x = x + 2;
 	break;
 	}
+
 	}
 	}
 	count = count + _putchar(format[x]);

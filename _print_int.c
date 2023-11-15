@@ -6,7 +6,7 @@
  */
 int _print_i(va_list list)
 {
-	long int num = va_arg(list, long int);
+	long num = va_arg(list, int);
 	char buffer[BUFF_SIZE] = {0};
 	int count = 0, x, z = 12;
 

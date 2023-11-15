@@ -10,7 +10,7 @@ int _puts_s(va_list list)
 	int len, x;
 
 	if (s == NULL)
-		s = "(nil)";
+		s = "(null)";
 	len = _strlen(s);
 	for (x = 0; x <= len; x++)
 	{

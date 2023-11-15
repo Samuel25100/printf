@@ -6,7 +6,7 @@
  */
 int _print_i(va_list list)
 {
-	int num = va_arg(list, int);
+	long int num = va_arg(list, long int);
 	char buffer[BUFF_SIZE] = {0};
 	int count = 0, x, z = 12;
 
@@ -34,7 +34,7 @@ int _print_i(va_list list)
  */
 int _print_d(va_list list)
 {
-	int num = va_arg(list, int);
+	long int num = va_arg(list, long int);
 	char buffer[BUFF_SIZE] = {0};
 	int count = 0, x, z = 12;
 

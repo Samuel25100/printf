@@ -42,7 +42,7 @@ int print_unsig(unsigned int num, int count)
 int _print_o(va_list list)
 {
 	int count = 0;
-	unsigned long int num = va_arg(list, unsigned long int);
+	unsigned long int num = va_arg(list, int);
 
 	count = _print_octal(num, count);
 	return (count);

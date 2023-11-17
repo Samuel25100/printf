@@ -23,11 +23,6 @@ int change_to_bi(unsigned int x)
 	unsigned int z = x;
 	int count = 0;
 
-	if (x == 0)
-	{
-	_putchar('0');
-	return(1);
-	}
 	while (z > 0)
 	{
 	z = z / 2;

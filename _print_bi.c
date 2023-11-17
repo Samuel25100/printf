@@ -10,6 +10,11 @@ int _print_bi(va_list list)
 	unsigned int num = va_arg(list, unsigned int);
 	int x = 0;
 
+	if (num == 0)
+	{
+	_putchar('0');
+	return (1);
+	}
 	x = x + change_to_bi(num);
 	return (x);
 }

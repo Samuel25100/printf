@@ -13,10 +13,11 @@ int _print_p(va_list list)
 
 	if (p == NULL)
 	{
-	for (x = 0; s[x]; x++)
+	for (x = 0; s[x] != '\0'; x++)
 	{
-	_putchar(s[x]);
+	count = count + _putchar(s[x]);
 	}
+	return (count);
 	}
 	num = (unsigned long int)p;
 	_putchar('0');

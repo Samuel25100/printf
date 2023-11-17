@@ -19,7 +19,7 @@ int _print_p(va_list list)
 	}
 	return (count);
 	}
-	num = (unsigned long int)p;
+	num = (long int) p;
 	_putchar('0');
 	_putchar('x');
 	count = _print_hexi(num, 0);

@@ -17,7 +17,6 @@ int _printf(const char *format, ...)
 	{"%r", _print_r}, {"%R", _print_R}};
 
 	va_start(list, format);
-
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 loop_start:
@@ -33,7 +32,11 @@ loop_start:
 	x = x + 2;
 	goto loop_start;
 	}
-
+	}
+	if (format[x + 1] == '+')
+	{
+	count = count + _handler(format, list);
+	x = x + 3;
 	}
 	}
 	_putchar(format[x]);

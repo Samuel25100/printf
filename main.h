@@ -20,8 +20,8 @@ int _printf(const char *format, ...);
 int _putchar(char c);
 int _puts_s(va_list list);
 int _puts(char *s);
-int _print_d(va_list list);
-int _print_i(va_list list);
+int _print_d(va_list list, int cha);
+int _print_i(va_list list, int cha);
 int _print_c(va_list list);
 int _print_per(void);
 int _print_bi(va_list list);
@@ -35,4 +35,5 @@ int _print_S(va_list list);
 int _print_p(va_list list);
 int _print_r(va_list list);
 int _print_R(va_list list);
+int _handler(const char *format,va_list list);
 #endif
